@@ -11,6 +11,7 @@ defmodule Teacher.Api.V1.MovieView do
 
   def render("movie.json", %{movie: movie}) do
     %{title: movie.title,
+      summary: movie.summary,
       year: movie.year}
   end
 
